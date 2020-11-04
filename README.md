@@ -1,9 +1,9 @@
 # Spelunkys Level Generator (WIP)
 Implementation of Spelunkys procedural level generator in Unity.
-### Preview
-![Preview](Preview.png)  
 Based on Game Maker's toolkit amazing video explaining how the levels are generated:  
 https://www.youtube.com/watch?v=Uqk5Zf0tw3o
+### Preview
+![Preview](Preview.png)  
 ## Prerequisites
 - Unity 2019.3.0f6 or higher
 ## Packages used

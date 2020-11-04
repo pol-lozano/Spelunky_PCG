@@ -1,5 +1,5 @@
 # Spelunkys Level Generator (WIP)
-Implementation of Spelunkys procedural level generator in Unity.
+Implementation of Spelunkys procedural level generator in Unity.  
 Based on Game Maker's toolkit amazing video explaining how the levels are generated:  
 https://www.youtube.com/watch?v=Uqk5Zf0tw3o
 ### Preview

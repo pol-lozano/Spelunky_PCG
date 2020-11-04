@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &929266856243162492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929266856243162494}
+  - component: {fileID: 929266856243162495}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929266856243162494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929266856243162492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929266856243162495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929266856243162492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8beb67e97a3016a48bc1587f8d157402, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelHeight: 4
+  levelWidth: 4
+  tilemap: {fileID: 0}
+  ladderTilemap: {fileID: 0}
+  background: {fileID: 0}
+  dirtTile: {fileID: 11400000, guid: a3d70b18c3f00ec40883b49dc173eda3, type: 2}
+  ladderTile: {fileID: 11400000, guid: 485b7847156c89c448b32a9f4e0120e5, type: 2}
+  randomTile: {fileID: 11400000, guid: a91d535fa3337ea4595e2694f46642ef, type: 2}
+  stoneTile: {fileID: 11400000, guid: 2a14225d73e122441a8416542184d1bb, type: 2}
+  bgTile: {fileID: 11400000, guid: 6aeca946ca6d22849b76c86187307cfd, type: 2}
+  templates:
+  - name: Random
+    images:
+    - {fileID: 2800000, guid: 677f1b984ff93f146a61db7721a9ad02, type: 3}
+    - {fileID: 2800000, guid: 42a4b0e62bc0aab4e9dfa3c74fd0bce1, type: 3}
+    - {fileID: 2800000, guid: 2627eb4cdaa0f7f418ca076e902e3ef0, type: 3}
+    - {fileID: 2800000, guid: 7c4677de585db5a419d6520c6902a007, type: 3}
+  - name: Corridor
+    images:
+    - {fileID: 2800000, guid: 1ecdf05570431f74c88a019c914d2052, type: 3}
+    - {fileID: 2800000, guid: 9d44c32b6f4ae434cab4523a18cd7676, type: 3}
+    - {fileID: 2800000, guid: d3dc045d6c11e684a82b112d1e852307, type: 3}
+    - {fileID: 2800000, guid: e376ca43db6ef52459b5a700a3d97cef, type: 3}
+  - name: Fall from
+    images:
+    - {fileID: 2800000, guid: 519797dc73f9f874b82cac492feff1f4, type: 3}
+    - {fileID: 2800000, guid: 1b150a3246f1fc94a90e8d53a0ecb4ff, type: 3}
+  - name: Fall into
+    images:
+    - {fileID: 2800000, guid: 3e272a8cc80d80844bb4f1afadccf323, type: 3}
+    - {fileID: 2800000, guid: 58738c55dfbf28c49af61ac9918579b4, type: 3}
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 1, g: 1, b: 0, a: 0.5019608}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: 8b66c12640f926643b90f7e5463e3c1d, type: 3}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 4
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 1, y: -2}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0

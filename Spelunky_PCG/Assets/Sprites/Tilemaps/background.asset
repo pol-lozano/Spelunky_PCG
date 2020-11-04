@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: background
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: 8723627089818988054, guid: e0e0db07f6a06d7489aec952bf3f9d02,
+    type: 3}
+  m_DefaultGameObject: {fileID: 0}
+  m_DefaultColliderType: 1
+  m_TilingRules:
+  - m_Neighbors: 0000000000000000000000000000000000000000000000000000000000000000
+    m_Sprites:
+    - {fileID: 8723627089818988054, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 1847426240950204211, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 4800672934674647635, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: -7875489760643984399, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 2973947981504449548, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 6592588583943870821, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: -7443154887525442522, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 9083099165043346402, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 4116365441486355907, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 986231843451655090, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: -9128341262540476845, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 3490511792185294365, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 3563459812249080561, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 5743655802321997163, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: 1736617264138840194, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    - {fileID: -3022625846174546859, guid: e0e0db07f6a06d7489aec952bf3f9d02, type: 3}
+    m_GameObject: {fileID: 0}
+    m_AnimationSpeed: 1
+    m_PerlinScale: 0.5
+    m_RuleTransform: 0
+    m_Output: 1
+    m_ColliderType: 1
+    m_RandomTransform: 0

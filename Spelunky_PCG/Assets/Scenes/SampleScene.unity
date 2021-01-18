@@ -2620,6 +2620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
         type: 3}
+      propertyPath: tiles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 564229346}
@@ -2682,6 +2687,48 @@ PrefabInstance:
       propertyPath: levelWidth
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 48cd8bd8609d6dc46bb87cbc3bb567cf,
+        type: 2}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2a14225d73e122441a8416542184d1bb,
+        type: 2}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b6a2f68ccedab1a4592a90cb5dcf0817,
+        type: 2}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 485b7847156c89c448b32a9f4e0120e5,
+        type: 2}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: d767d70c6a204b641bdda87bafa9b626,
+        type: 2}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: a91d535fa3337ea4595e2694f46642ef,
+        type: 2}
+    - target: {fileID: 929266856243162495, guid: 6da25a747f37a2b4295db473e27a7922,
+        type: 3}
+      propertyPath: tiles.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6aeca946ca6d22849b76c86187307cfd,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6da25a747f37a2b4295db473e27a7922, type: 3}
 --- !u!1001 &3954594888235819561

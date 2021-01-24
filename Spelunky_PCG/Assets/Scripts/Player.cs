@@ -228,7 +228,7 @@ public class Player : MonoBehaviour
     //For now just generate a new level 
     private void EnterDoor()
     {
-        FindObjectOfType<LevelGenerator>().GenerateLevel();
+        GameManager.instance.LoadLevel();
         enteringDoor = false;
     }
 

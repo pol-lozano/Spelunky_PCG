@@ -24,7 +24,8 @@ public class Player : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sr;
 
-    private Tilemap tilemap;
+    public Tilemap tilemap;
+    public LevelGenerator levelGenerator;
 
     private enum State
     {
@@ -42,7 +43,8 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
-        tilemap = FindObjectOfType<LevelGenerator>().Tilemap;
+        levelGenerator = FindObjectOfType<LevelGenerator>();
+        tilemap = levelGenerator.Tilemap;
     }
 
     void Update()
@@ -228,7 +230,7 @@ public class Player : MonoBehaviour
     //For now just generate a new level 
     private void EnterDoor()
     {
-        GameManager.instance.LoadLevel();
+        levelGenerator.GenerateLevel();
         enteringDoor = false;
     }
 

@@ -70,16 +70,34 @@ public class LevelGenerator : MonoBehaviour
             [Color.clear] = TileID.EMPTY
         };
 
+        player = FindObjectOfType<Player>();
+
         GenerateLevel();
     }
 
+    public bool doingSetup;
+    public Player player;
+
     public void GenerateLevel()
     {
+        doingSetup = true;
+        //Keep track of time it takes to generate levels
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+
         ClearTiles();
         GenerateBorder();
         level = new Level(levelWidth, levelHeight);
         level.Generate();
         BuildRooms();
+
+        //Spawn player in
+        player.transform.position = spawnPos;
+
+        //Stop timer and print time elapsed
+        watch.Stop();
+        var elapsedMs = watch.ElapsedMilliseconds;
+        Debug.Log("Generation Time: " + elapsedMs + "ms");
+        doingSetup = false;
     }
 
     //Clears tilemaps and rooms
@@ -235,7 +253,7 @@ public class LevelGenerator : MonoBehaviour
     //Draw gizmos
     private void OnDrawGizmos()
     {
-        if (!Application.isPlaying || GameManager.instance.doingSetup) return;
+        if (!Application.isPlaying || doingSetup) return;
         DrawRooms();
         DrawPath();    
     }
